@@ -125,7 +125,47 @@
   body {
     @apply bg-background text-foreground;
   }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .shimmer-block {
+    background: linear-gradient(90deg, #27272a 25%, #3f3f46 50%, #27272a 75%);
+    background-size: 200% 100%;
+    animation: custom-shimmer 1.6s infinite linear;
+  }
+
+  .progress-fill {
+    animation: custom-progress 2.4s ease-out forwards;
+  }
+}
+
+@keyframes custom-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes custom-progress {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 55%;
+  }
+  70% {
+    width: 78%;
+  }
+  100% {
+    width: 100%;
   }
 }
