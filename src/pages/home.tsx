@@ -80,21 +80,42 @@ export const Home = () => {
         <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
           <article className="space-y-4">
             <h2 className="font-bold text-2xl text-foreground tracking-tight">Video Edukasi</h2>
-            <p className="text-foreground/70 text-sm leading-relaxed">Kerjain Wis</p>
+            <p className="text-foreground/70 text-sm leading-relaxed">
+              Video ini membahas profesionalisme & kode etik profesi IT di Indonesia, dilengkapi
+              studi kasus dan solusi membangun ekosistem yang beretika.
+            </p>
+            <ul className="flex flex-col gap-2">
+              <li className="flex items-center gap-2 text-foreground/70 text-sm">
+                <span className="size-1.5 shrink-0 rounded-full bg-foreground" />
+                Latar belakang & tantangan etika profesi IT
+              </li>
+              <li className="flex items-center gap-2 text-foreground/70 text-sm">
+                <span className="size-1.5 shrink-0 rounded-full bg-foreground" />4 dimensi
+                profesionalisme + kode etik IPTEK, IEEE, UU ITE
+              </li>
+              <li className="flex items-center gap-2 text-foreground/70 text-sm">
+                <span className="size-1.5 shrink-0 rounded-full bg-foreground" />
+                Studi kasus: kebocoran data BPJS (279 juta) & Cambridge Analytica
+              </li>
+              <li className="flex items-center gap-2 text-foreground/70 text-sm">
+                <span className="size-1.5 shrink-0 rounded-full bg-foreground" />
+                Solusi: pendidikan etika, tata kelola data, penguatan regulasi
+              </li>
+            </ul>
           </article>
           {/*<ul className="flex flex-col gap-2">
-              {videoPoints.map((item) => (
-                <li key={item} className="flex items-center gap-2 text-foreground/70 text-sm">
-                  <span className="size-1.5 shrink-0 rounded-full bg-foreground" />
-                  {item}
-                </li>
-              ))}
-            </ul>*/}
+                {videoPoints.map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-foreground/70 text-sm">
+                    <span className="size-1.5 shrink-0 rounded-full bg-foreground" />
+                    {item}
+                  </li>
+                ))}
+              </ul>*/}
 
           <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-foreground/10 bg-black/40">
             <iframe
               className="absolute top-0 left-0 h-full w-full"
-              src="https://www.youtube.com/embed/XdUNtwqRncs?rel=0"
+              src="https://www.youtube.com/embed/5GnVibFSvOc?rel=0"
               title="Video Edukasi"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
